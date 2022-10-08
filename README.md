@@ -3,7 +3,7 @@
 ![C# Badge](https://img.shields.io/badge/C-%23-blue)
 
 # Third Person Shooter Player
-## Description : This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.
+## Description : This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.See [Demo Video](https://www.youtube.com/watch?v=D0Iv-NGmIcg).
 
 ## Contents :
 - [x] Third Person Shooter Player(Locomotion with Jump,shoot,reload,weapon change)
