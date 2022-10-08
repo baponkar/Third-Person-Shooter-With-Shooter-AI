@@ -3,7 +3,7 @@
 ![C# Badge](https://img.shields.io/badge/C-%23-blue)
 
 # Third Person Shooter Player
-## Description : This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset which is Western Pack and a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.
+## Description : This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.
 
 ## Contents :
 - [x] Third Person Shooter Player(Locomotion with Jump,shoot,reload,weapon change)
@@ -55,7 +55,7 @@ See Using project [Doc] Video in YouTube.
 1. Project Name - Third Person Shooter Player
 2. Used Unity Version to build this project - 2020.15f2
 3. Developer Name : [baponkar](https://github.com/baponkar)
-4. Social Site : ![twittwr badge](https://img.shields.io/twitter/follow/kar_bapon?)style=social
+4. Social Site : ![twittwr badge](https://img.shields.io/twitter/follow/kar_bapon?style=social)
 5. Contact for Support : gamingjam60@gmail.com
 6. Build Date : 07-07-2022
 7. Last  Updated : 07-07-2022
