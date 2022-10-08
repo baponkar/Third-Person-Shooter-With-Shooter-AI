@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb6e420e82cca941948c98c05afb511, type: 3}
+  m_Name: Defult_AiAgent_Config
+  m_EditorClassIdentifier: 
+  walkingSpeed: 2.11474
+  runningSpeed: 4.229481
+  patrolWaitTime: 0.1
+  patrolRadius: 20
+  patrolTurnSpeed: 720
+  fleeRadius: 20
+  attackRange: 25
+  maxTime: 1
+  maxDistance: 2
+  dieForce: 10
+  maxSightDistance: 5
+  turnSpeed: 720

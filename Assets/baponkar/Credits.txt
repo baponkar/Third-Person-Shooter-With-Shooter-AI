@@ -1,0 +1,13 @@
+#External Assets are used to develop this project
+
+1. [Standard Asset Character](https://github.com/Unity-Technologies/Standard-Assets-Characters)
+2. [AWP SNIPER](https://assetstore.unity.com/packages/3d/props/guns/awp-sniper-96523)
+3. [Unity Particle Pack](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325#reviews)
+4. [Joystick Pack](https://assetstore.unity.com/packages/p/joystick-pack-107631)
+5. [M9 Knife](https://assetstore.unity.com/packages/3d/props/weapons/m9-knife-7597#description)
+6. [[PBR] Pistol](https://assetstore.unity.com/packages/3d/props/guns/pbr-pistol-33838)
+7. [Rifle](https://assetstore.unity.com/packages/3d/props/guns/rifle-25668)
+8. [FPS Grenade](https://assetstore.unity.Recordercom/packages/3d/fps-grenade-model-textures-63667#description)
+9. [https://www.mixamo.com/](SWAT Character)
+10. [Animation Rigging-1.0.3](http://docs.unity3d.com/Packages/com.unity.animation.rigging@1.0/index.html)
+11. [Cinemachine-2.6.15](http://docs.unity3d.com/Packages/com.unity.cinemachine@2.6/index.html)
