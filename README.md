@@ -62,6 +62,6 @@ See Using project [Doc] Video in YouTube.
 
 [![License](https://img.shields.io/badge/License-Baponkar%20License-red)](https://github.com/baponkar)
 
-@[Copyright](https://github.com/baponkae)
+@[Copyright](https://github.com/baponkar)
 
 ![Donation Badge](https://img.shields.io/github/sponsors/baponkar)
