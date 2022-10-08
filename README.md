@@ -1,12 +1,14 @@
 ![Unity2020 Badge](https://img.shields.io/badge/Unity-v2020-orange)
+
 ![C# Badge](https://img.shields.io/badge/C-%23-blue)
+
 # Third Person Shooter Player
 ## Description : This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset which is Western Pack and a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.
 
 ## Contents :
 - [x] Third Person Shooter Player(Locomotion with Jump,shoot,reload,weapon change)
-- [ ] First Person Shooter Player(Will be added!)
-- [ ] Cross Platform Control
+- [x] First Person Shooter Player
+- [x] Cross Platform Control
 - [ ] Multiple AI
 - [ ] AI take cover and Hide ability!
 - [x] Mini Map
@@ -15,7 +17,9 @@
 - [x] Four Demo Scene
 - [x] Weapon Pickup for player and AI
 - [x] Demo Scene
+
 See project [Demo]() Video in  YouTube.
+
 See Using project [Doc] Video in YouTube.
 ## Screenshots
 ![ScreenShot1]()
@@ -36,15 +40,10 @@ See Using project [Doc] Video in YouTube.
 7. [FPS Grenade](https://assetstore.unity.Recordercom/packages/3d/fps-grenade-model-textures-63667#description)
 * Unity Registry Store Assets
 ---
-8. Cinemachine.
-9. ProBuilder.
-10. ProGrid.
-11. Animation Rigging.
-12. Unity Recorder.
-13. Asset Store Tool.
+1. Cinemachine.
+2. Animation Rigging.
+
 * External packages
----
-14. [Western Pack](https://goo.gl/baxMs9)
 ---
 * YT Video Tutorials
 1. [Kiwi Coder](https://www.youtube.com/c/TheKiwiCoder)
@@ -62,5 +61,7 @@ See Using project [Doc] Video in YouTube.
 7. Last  Updated : 07-07-2022
 
 [![License](https://img.shields.io/badge/License-Baponkar%20License-red)](https://github.com/baponkar)
+
+@[Copyright](https://github.com/baponkae)
 
 ![Donation Badge](https://img.shields.io/github/sponsors/baponkar)
