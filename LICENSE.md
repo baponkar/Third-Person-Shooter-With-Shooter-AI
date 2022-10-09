@@ -1,8 +1,8 @@
                     	LICENSE by baponkar
-                       Version 1, June 2022
+                       Version 1.0.1, June 2022
 
  Copyright (C)2022 Bapon Kar,
- 5, South Baksara, Howrah, India- 711110
+ Howrah, India
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 

@@ -2,6 +2,8 @@
 
 ![C# Badge](https://img.shields.io/badge/C-%23-blue)
 
+![License](https://img.shields.io/badge/License-Baponkar%20License-red)
+
 # Third Person Shooter Player
 ## Description : This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.See [Demo Video](https://www.youtube.com/watch?v=D0Iv-NGmIcg).
 
@@ -60,7 +62,8 @@ See Using project [Doc] Video in YouTube.
 6. Build Date : 07-07-2022
 7. Last  Updated : 09-10-2022
 
-[![License](https://img.shields.io/badge/License-Baponkar%20License-red)](https://github.com/baponkar)
+[LICENSE](LICENSE.MD)
+
 
 @[Copyright](https://github.com/baponkar)
 
