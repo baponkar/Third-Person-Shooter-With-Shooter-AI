@@ -163,5 +163,12 @@ namespace ThirdPersonShooter.Ai
             }
 
         }
+
+        public void FaceTowardTarget(Vector3 targetPos)
+        {   
+            Vector3 direction = (targetPos - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(new Vector3 (direction.x,0,direction.z));
+            transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation,Time.time * config.patrolTurnSpeed);
+        }
     }
 }

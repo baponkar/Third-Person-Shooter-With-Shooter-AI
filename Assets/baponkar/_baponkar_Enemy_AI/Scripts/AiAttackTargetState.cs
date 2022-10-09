@@ -15,7 +15,7 @@ namespace ThirdPersonShooter.Ai
 
         public  void Enter(AiAgent agent)
         {
-            FaceTowardsTarget(agent);
+            agent.FaceTowardTarget(agent.targetingSystem.TargetPosition);
             agent.weapons.ActivateWeapon();
             agent.navMeshAgent.stoppingDistance = agent.config.attackRange;
             agent.navMeshAgent.isStopped = true;
@@ -33,7 +33,7 @@ namespace ThirdPersonShooter.Ai
                 {
                     if(agent.targetingSystem.TargetDistance <= agent.config.attackRange)
                     {
-                        FaceTowardsTarget(agent);
+                        agent.FaceTowardTarget(agent.targetingSystem.TargetPosition);
                         agent.weapons.SetFireing(true);
                     }
                     else
@@ -57,20 +57,6 @@ namespace ThirdPersonShooter.Ai
             agent.navMeshAgent.stoppingDistance = 0.0f;
             agent.weapons.DeActivateWeapon();
             agent.navMeshAgent.isStopped = false;
-        }
-
-        void FaceTowardsTarget(AiAgent agent)
-        {   
-            Vector3 direction = (agent.targetingSystem.TargetPosition - agent.transform.position).normalized;
-            Quaternion lookRotation = Quaternion.LookRotation(new Vector3 (direction.x,0,direction.z));
-            agent.transform.rotation = Quaternion.Lerp(agent.transform.rotation, lookRotation, Time.time * agent.config.turnSpeed);
-        }
-
-         void FaceTowardsPlayer(AiAgent agent)
-        {   
-            Vector3 direction = (agent.playerTransform.position - agent.transform.position).normalized;
-            Quaternion lookRotation = Quaternion.LookRotation(new Vector3 (direction.x,0,direction.z));
-            agent.transform.rotation = Quaternion.Lerp(agent.transform.rotation, lookRotation, Time.time * agent.config.turnSpeed);
         }
     }
 }
