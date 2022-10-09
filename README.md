@@ -1,7 +1,5 @@
 ![Unity2020 Badge](https://img.shields.io/badge/Unity-v2020-orange)
-
 ![C# Badge](https://img.shields.io/badge/C-%23-blue)
-
 ![License](https://img.shields.io/badge/License-Baponkar%20License-red)
 
 # Third Person Shooter Player
@@ -62,7 +60,7 @@ See Using project [Doc] Video in YouTube.
 6. Build Date : 07-07-2022
 7. Last  Updated : 09-10-2022
 
-[LICENSE](LICENSE.MD)
+[LICENSE](LICENSE.md)
 
 
 @[Copyright](https://github.com/baponkar)
