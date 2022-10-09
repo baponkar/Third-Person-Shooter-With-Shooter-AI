@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     [HideInInspector] PlayerDeathEffect playerDeathEffect = null;
     [HideInInspector] AiAgentDeathEffect aiAgentDeathEffect = null;
     //[HideInInspector] AiAgent agent;
+    public bool getShot = false;
 
 
     void Start()
@@ -58,6 +59,13 @@ public class Health : MonoBehaviour
     //     }
     // }
 
+    IEnumerator GetShot()
+    {
+        getShot = true;
+        yield return new WaitForSeconds(5f);
+        getShot = false;
+    }
+
     public void TakeDamage(float damage, Vector3 direction)
     {
         currentHealth -= damage;
@@ -65,8 +73,9 @@ public class Health : MonoBehaviour
         {
             isDead = true;
             DeathEffect(direction);
-            
         }
+
+        StartCoroutine("GetShot");
     }
 
     public void DeathEffect(Vector3 direction)

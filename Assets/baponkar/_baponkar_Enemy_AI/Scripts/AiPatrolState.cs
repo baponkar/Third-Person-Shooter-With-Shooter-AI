@@ -48,6 +48,12 @@ public class AiPatrolState : AiState
             {
                 Patrolling(agent);
             }
+
+            if(agent.health.getShot)
+            {
+                FacePlayer(agent);
+                //agent.stateMachine.ChangeState(AiStateId.);
+            }
         }
     } 
     public void Exit(AiAgent agent)
@@ -97,6 +103,13 @@ public class AiPatrolState : AiState
     void FacePatrol(AiAgent agent)
     {   
         Vector3 direction = (tempTarget- agent.navMeshAgent.transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3 (direction.x,0,direction.z));
+        agent.navMeshAgent.transform.rotation = Quaternion.Lerp(agent.navMeshAgent.transform.rotation, lookRotation,Time.time*agent.config.patrolTurnSpeed);
+    }
+
+    void FacePlayer(AiAgent agent)
+    {   
+        Vector3 direction = (agent.playerTransform.position - agent.navMeshAgent.transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3 (direction.x,0,direction.z));
         agent.navMeshAgent.transform.rotation = Quaternion.Lerp(agent.navMeshAgent.transform.rotation, lookRotation,Time.time*agent.config.patrolTurnSpeed);
     }
