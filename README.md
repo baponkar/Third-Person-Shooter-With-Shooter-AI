@@ -4,7 +4,7 @@
 ![IssueBadge](https://img.shields.io/github/issues/baponkar/Third-Person-Shooter-With-Shooter-AI)
 ![ForksBadge](https://img.shields.io/github/forks/baponkar/Third-Person-Shooter-With-Shooter-AI)
 ![StarsBadge](https://img.shields.io/github/stars/baponkar/Third-Person-Shooter-With-Shooter-AI)
-![licenseBadge](https://img.shields.io/github/license/baponkar/Third-Person-Shooter-With-Shooter-AI)
+
 
 
 
