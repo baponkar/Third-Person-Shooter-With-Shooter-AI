@@ -30,9 +30,8 @@ See Using project [Doc] Video in YouTube.
 
 
 ## Dependent Packages :
-
-* Unity Asset Store Packages
 ---
+* Unity Asset Store Packages
 1. [Standard Asset Character](https://github.com/Unity-Technologies/Standard-Assets-Characters)
 2. [AWP SNIPER](https://assetstore.unity.com/packages/3d/props/guns/awp-sniper-96523)
 3. [Unity Particle Pack](https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325#reviews)
@@ -43,16 +42,19 @@ See Using project [Doc] Video in YouTube.
 
 ---
 * Unity Registry Store Assets
-1. Cinemachine.
-2. Animation Rigging.
+1. [Cinemachine](https://docs.unity3d.com/Packages/com.unity.cinemachine@2.3/manual/index.html)
+2. [Animation Rigging](https://docs.unity3d.com/Packages/com.unity.animation.rigging@1.0/manual/index.html)
 
 ---
 * External packages
+* SWAT Character
+1. [Mixamo](https://www/mixamo.com) 
+
+---
 * YT Video Tutorials
 1. [Kiwi Coder](https://www.youtube.com/c/TheKiwiCoder)
 2. [Brackeys](https://www.youtube.com/results?search_query=brackeys)
-* SWAT Character
-1. [Mixamo](https://www/mixamo.com) 
+
 ---
 ## Info
 1. Project Name - Third Person Shooter Player
@@ -63,9 +65,10 @@ See Using project [Doc] Video in YouTube.
 6. Build Date : 07-07-2022
 7. Last  Updated : 09-10-2022
 
+
+---
 [LICENSE](LICENSE.md)
-
-
+---
 @[Copyright](https://github.com/baponkar)
-
+---
 ![Donation Badge](https://img.shields.io/github/sponsors/baponkar)
