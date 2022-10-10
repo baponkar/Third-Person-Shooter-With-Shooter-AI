@@ -4,7 +4,8 @@
 ![IssueBadge](https://img.shields.io/github/issues/baponkar/Third-Person-Shooter-With-Shooter-AI)
 ![ForksBadge](https://img.shields.io/github/forks/baponkar/Third-Person-Shooter-With-Shooter-AI)
 ![StarsBadge](https://img.shields.io/github/stars/baponkar/Third-Person-Shooter-With-Shooter-AI)
-
+![Donation Badge](https://img.shields.io/github/sponsors/baponkar)
+![Copyright Badge](https://img.shields.io/badge/Copright-baponkar-orange)
 
 
 
@@ -73,7 +74,5 @@ See Using project [Doc] Video in YouTube.
 
 ---
 [LICENSE](LICENSE.md)
----
-@[Copyright](https://github.com/baponkar)
----
-![Donation Badge](https://img.shields.io/github/sponsors/baponkar)
+
+
