@@ -40,13 +40,14 @@ See Using project [Doc] Video in YouTube.
 5. [[PBR] Pistol](https://assetstore.unity.com/packages/3d/props/guns/pbr-pistol-33838)
 6. [Rifle](https://assetstore.unity.com/packages/3d/props/guns/rifle-25668)
 7. [FPS Grenade](https://assetstore.unity.Recordercom/packages/3d/fps-grenade-model-textures-63667#description)
-* Unity Registry Store Assets
+
 ---
+* Unity Registry Store Assets
 1. Cinemachine.
 2. Animation Rigging.
 
-* External packages
 ---
+* External packages
 * YT Video Tutorials
 1. [Kiwi Coder](https://www.youtube.com/c/TheKiwiCoder)
 2. [Brackeys](https://www.youtube.com/results?search_query=brackeys)
