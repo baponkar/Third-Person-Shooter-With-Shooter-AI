@@ -1,6 +1,11 @@
 ![Unity2020 Badge](https://img.shields.io/badge/Unity-v2020-orange)
 ![C# Badge](https://img.shields.io/badge/C-%23-blue)
 ![License](https://img.shields.io/badge/License-Baponkar%20License-red)
+![IssueBadge](https://img.shields.io/github/issues/baponkar/Third-Person-Shooter-With-Shooter-AI)
+![ForksBadge](https://img.shields.io/github/forks/baponkar/Third-Person-Shooter-With-Shooter-AI)
+![StarsBadge](https://img.shields.io/github/stars/baponkar/Third-Person-Shooter-With-Shooter-AI)
+![licenseBadge](https://img.shields.io/github/license/baponkar/Third-Person-Shooter-With-Shooter-AI)
+
 
 
 ![ScreenShot1](Recordings/banner.png)
