@@ -5,7 +5,7 @@
 ![ForksBadge](https://img.shields.io/github/forks/baponkar/Third-Person-Shooter-With-Shooter-AI)
 ![StarsBadge](https://img.shields.io/github/stars/baponkar/Third-Person-Shooter-With-Shooter-AI)
 ![Donation Badge](https://img.shields.io/github/sponsors/baponkar)
-![Copyright Badge](https://img.shields.io/badge/Copright-baponkar-orange)
+![Copyright Badge](https://img.shields.io/badge/Copyright-baponkar-orange)
 
 
 
