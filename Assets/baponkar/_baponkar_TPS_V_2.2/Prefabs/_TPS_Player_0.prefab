@@ -6498,7 +6498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8180579461280283875}
   m_Layer: 0
-  m_Name: _TPS_Player
+  m_Name: _TPS_Player_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
