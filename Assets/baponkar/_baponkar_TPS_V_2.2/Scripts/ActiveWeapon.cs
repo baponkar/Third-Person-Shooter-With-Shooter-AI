@@ -50,7 +50,7 @@ public class ActiveWeapon : MonoBehaviour
     void Update()
     {
         //Updating  crossHairTarget position  to the child of main camera.
-        crossHairTarget = cam.transform.GetChild(1); 
+        crossHairTarget = cam.transform.GetChild(0).transform.GetChild(1); 
         var weapon = GetWeapon(activeWeaponIndex); //currently activeWeaponIndex = 0
         
         if(weapon & !isHolstered)

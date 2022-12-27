@@ -18,7 +18,7 @@ MonoBehaviour:
   patrolRadius: 20
   patrolTurnSpeed: 720
   fleeRadius: 20
-  attackRange: 25
+  attackRange: 5
   maxTime: 1
   maxDistance: 2
   dieForce: 10

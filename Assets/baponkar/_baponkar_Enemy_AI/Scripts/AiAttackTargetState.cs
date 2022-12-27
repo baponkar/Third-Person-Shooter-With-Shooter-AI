@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 
 
 namespace ThirdPersonShooter.Ai
 {
     public class AiAttackTargetState : AiState
     {
+        float timer;
+        float waitTime = 2f;
+
         public  AiStateId GetStateId()
         {
             return AiStateId.AttackTarget;
@@ -31,10 +34,11 @@ namespace ThirdPersonShooter.Ai
             {
                 if(agent.targetingSystem.HasTarget)
                 {
-                    if(agent.targetingSystem.TargetDistance <= agent.config.attackRange)
+                    if(agent.targetingSystem.TargetDistance <= agent.config.attackRange && !agent.rigController.GetBool("holster_weapon"))
                     {
                         agent.FaceTowardTarget(agent.targetingSystem.TargetPosition);
                         agent.weapons.SetFireing(true);
+                        agent.navMeshAgent.SetDestination(agent.targetingSystem.TargetPosition);
                     }
                     else
                     {

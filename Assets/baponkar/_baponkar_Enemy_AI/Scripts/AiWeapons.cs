@@ -22,7 +22,6 @@ namespace ThirdPersonShooter.Ai
         //This bool helps not to fire during  holster weapon
         public bool isHolstered = false;
         public Transform currentTarget;
-        [HideInInspector] public Transform playerTransform;
         public Vector3 targetOffsetPosition;
 
         #endregion
@@ -39,7 +38,6 @@ namespace ThirdPersonShooter.Ai
         void Start()
         {
             agent = GetComponent<AiAgent>();
-            playerTransform = agent.playerTransform;
             RaycastWeapon existingWeapon = GetComponentInChildren<RaycastWeapon>();
             if(existingWeapon)
             {
@@ -49,12 +47,12 @@ namespace ThirdPersonShooter.Ai
 
         void Update()
         {
-            var weapon = GetWeapon(activeWeaponIndex);
-            if(weapon && agent.targetingSystem.HasTarget)
-            {
-                currentTarget.position = agent.targetingSystem.TargetPosition + targetOffsetPosition;
-                weapon.UpdateWeapon(Time.deltaTime);
-            }
+            // var weapon = GetWeapon(activeWeaponIndex);
+            // if(weapon && agent.targetingSystem.HasTarget)
+            // {
+            //     currentTarget.position = agent.targetingSystem.TargetPosition + targetOffsetPosition;
+            //     weapon.UpdateWeapon(Time.deltaTime);
+            // }
         }
 
         public void SetFireing(bool enabled)
@@ -126,25 +124,25 @@ namespace ThirdPersonShooter.Ai
         IEnumerator SwitchWeapon(int holsterIndex, int activateIndex)
         {
             rigController.SetInteger("weaponIndex",activateIndex + 1);
-            yield return StartCoroutine(HolsterWeapon(holsterIndex)); 
+            //yield return StartCoroutine(HolsterWeapon(holsterIndex)); 
             yield return StartCoroutine(ActivateWeapon(activateIndex));
             activeWeaponIndex = activateIndex;
         }
 
-        IEnumerator HolsterWeapon(int index)
-        {
-            isHolstered = true;
-            var weapon = GetWeapon(index);
-            if(weapon)
-            {
-                do 
-                {
-                    yield return new WaitForEndOfFrame();
-                } 
-                while(rigController.GetCurrentAnimatorStateInfo(0).normalizedTime > 1.0f);
-                rigController.SetBool("holster_weapon", true);
-            }
-        }
+        // IEnumerator HolsterWeapon(int index)
+        // {
+        //     isHolstered = true;
+        //     var weapon = GetWeapon(index);
+        //     if(weapon)
+        //     {
+        //         do 
+        //         {
+        //             yield return new WaitForEndOfFrame();
+        //         } 
+        //         while(rigController.GetCurrentAnimatorStateInfo(0).normalizedTime > 1f);
+        //         rigController.SetBool("holster_weapon", true);
+        //     }
+        // }
 
         IEnumerator ActivateWeapon(int index)
         {
@@ -159,7 +157,7 @@ namespace ThirdPersonShooter.Ai
                     yield return new WaitForEndOfFrame();
                 }
 
-                while(rigController.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f);
+                while(rigController.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
                 rigController.SetBool("holster_weapon", false);
             }
         }
@@ -173,7 +171,7 @@ namespace ThirdPersonShooter.Ai
             }
             else
             {
-                StartCoroutine(HolsterWeapon(activeWeaponIndex));
+                //StartCoroutine(HolsterWeapon(activeWeaponIndex));
             }
         }
 
@@ -184,7 +182,7 @@ namespace ThirdPersonShooter.Ai
 
         public void DeActivateWeapon()
         {
-            StartCoroutine(HolsterWeapon(activeWeaponIndex));
+            //StartCoroutine(HolsterWeapon(activeWeaponIndex));
         }
 
         public bool HasWeapon()

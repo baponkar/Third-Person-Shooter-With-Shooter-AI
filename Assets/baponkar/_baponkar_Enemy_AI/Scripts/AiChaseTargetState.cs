@@ -46,7 +46,7 @@ namespace ThirdPersonShooter.Ai
                     if(agent.navMeshAgent.pathStatus != NavMeshPathStatus.PathPartial)
                     {
                         agent.navMeshAgent.SetDestination(agent.targetingSystem.TargetPosition);
-                        
+                        agent.weapons.SetFireing(true);
                     }
                 }
                 timer = agent.config.maxTime;
