@@ -34,7 +34,7 @@ namespace ThirdPersonShooter.Ai
             {
                 if(agent.targetingSystem.HasTarget)
                 {
-                    if(agent.targetingSystem.TargetDistance <= agent.config.attackRange && !agent.rigController.GetBool("holster_weapon"))
+                    if(agent.targetingSystem.TargetDistance <= agent.config.attackRange )
                     {
                         agent.FaceTowardTarget(agent.targetingSystem.TargetPosition);
                         agent.weapons.SetFireing(true);

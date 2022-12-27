@@ -47,12 +47,12 @@ namespace ThirdPersonShooter.Ai
 
         void Update()
         {
-            // var weapon = GetWeapon(activeWeaponIndex);
-            // if(weapon && agent.targetingSystem.HasTarget)
-            // {
-            //     currentTarget.position = agent.targetingSystem.TargetPosition + targetOffsetPosition;
-            //     weapon.UpdateWeapon(Time.deltaTime);
-            // }
+            var weapon = GetWeapon(activeWeaponIndex);
+            if(weapon && agent.targetingSystem.HasTarget)
+            {
+                 currentTarget.position = agent.targetingSystem.TargetPosition + targetOffsetPosition;
+                 weapon.UpdateWeapon(Time.deltaTime);
+            }
         }
 
         public void SetFireing(bool enabled)

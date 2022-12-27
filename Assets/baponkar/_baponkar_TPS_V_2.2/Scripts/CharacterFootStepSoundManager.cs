@@ -18,9 +18,5 @@ public class CharacterFootStepSoundManager : MonoBehaviour
         
     }
 
-    public void FootStep()
-    {
-        int randomIndex = (int) Random.Range(0, footStepSounds.Length);
-        audioSource.PlayOneShot(footStepSounds[randomIndex]);
-    }
+    
 }

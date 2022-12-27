@@ -78,7 +78,7 @@ public class WeaponRecoil : MonoBehaviour
         index = GetNextIndex(index);
         if(rigController)
         {
-            rigController?.Play("weapon_recoil_" + weaponName, recoilLayerIndex, 0.0f);
+            //rigController?.Play("weapon_recoil_" + weaponName, recoilLayerIndex, 0.0f);
         }
         
     }

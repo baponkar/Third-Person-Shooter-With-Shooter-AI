@@ -20,9 +20,9 @@ namespace ThirdPersonShooter.Ai
 
         public AiAgentConfig config;
 
-        [HideInInspector] public AiWeapons weapons;
+        [SerializeField] public AiWeapons weapons;
         [HideInInspector] public Animator animator;
-        [HideInInspector] public Animator rigController;
+        [SerializeField] public Animator rigController;
     
         [HideInInspector] public AiVisonSensor visonSensor;
         [HideInInspector] public AiTargetingSystem targetingSystem;

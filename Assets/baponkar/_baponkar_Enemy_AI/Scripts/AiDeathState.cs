@@ -20,9 +20,10 @@ public class AiDeathState : AiState
         agent.ragdol.ActivateRagdol();
         direction.y = 1f;
         agent.ragdol.ApplyForce(direction * agent.config.dieForce);
-        agent.weapons.DropWeapon();
         agent.weapons.SetFireing(false);
+        agent.weapons.DropWeapon();
         
+
         // Destroy(gameObject);
         agent.transform.GetComponent<AiAgent>().enabled = false;
         agent.transform.GetComponent<AiAgentLocomotion>().enabled = false;
