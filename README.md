@@ -69,7 +69,7 @@ See Using project [Doc] Video in YouTube.
 4. Social Site : ![twittwr badge](https://img.shields.io/twitter/follow/kar_bapon?style=social)
 5. Contact for Support : gamingjam60@gmail.com
 6. Build Date : 07-07-2022
-7. Last  Updated : 09-10-2022
+7. ~~Last  Updated : 09-10-2022~~
 
 
 ---
