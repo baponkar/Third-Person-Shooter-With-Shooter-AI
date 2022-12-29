@@ -77,10 +77,13 @@ See Using project [Doc] Video in YouTube.
 
 
 ## Doc
+
 Need to create Layers :
+
 ![Layers](Recordings/layers.png)
 
 Need to create Tags : 
+
 ![Tags](Recordings/tags.png)
 
 Need to assign "Character" Layer to the layers of Player(swat@T-Pose) and _AI_SWAT prefabs.
