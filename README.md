@@ -76,3 +76,15 @@ See Using project [Doc] Video in YouTube.
 [LICENSE](LICENSE.md)
 
 
+## Doc
+Need to create Layers :
+![Layers](Recordings/layers.png)
+
+Need to create Tags : 
+![Tags](Recordings/tags.png)
+
+Need to assign "Character" Layer to the layers of Player(swat@T-Pose) and _AI_SWAT prefabs.
+Need to assign "Pickup" Layer to the all Pickups prefabs.
+Need to assign "Minimap" Layer to the minimap prefab.
+Need to assign "UI" Layer to the all UI elements.
+Need to assign "Everything" Layer to the AudioControl script which attached to the player prefab child object.
