@@ -28,10 +28,10 @@ namespace ThirdPersonShooter.Ai
 
         #region Private Variables
 
-        RaycastWeapon [] equiped_weapon = new RaycastWeapon[3];
+        public RaycastWeapon [] equiped_weapon = new RaycastWeapon[3];
         int activeWeaponIndex = -1;
         AiAgent agent;
-        bool weaponDroped = false;
+        public bool weaponDroped = false;
 
         #endregion
 
@@ -204,15 +204,15 @@ namespace ThirdPersonShooter.Ai
         {
             if(!weaponDroped)
             {
-                for(int i=0;i<equiped_weapon.Length;i++)
+                for(int i=0; i<3; i++)
                 {
                     if(equiped_weapon[i] != null)
                     {
-                        equiped_weapon[i].transform.SetParent(null);
-                        equiped_weapon[i].GetComponent<BoxCollider>().enabled = true;
-                        Rigidbody rb = equiped_weapon[i].gameObject.AddComponent<Rigidbody>();
+                        Transform weapon = equiped_weapon[i].gameObject.transform;
+                        weapon.SetParent(null);
+                        weapon.GetComponent<BoxCollider>().enabled = true;
+                        Rigidbody rb = weapon.gameObject.AddComponent<Rigidbody>();
                         rb.useGravity = true;
-                        equiped_weapon[i] = null;
                         SetFireing(false);
                     }
                 }

@@ -10,7 +10,7 @@ using ThirdPersonShooter.Ai;
 public class Health : MonoBehaviour
 {
     public float maxHealth = 100f;
-    [HideInInspector] public float currentHealth;
+    public float currentHealth;
     public bool isDead = false;
     [HideInInspector] PlayerDeathEffect playerDeathEffect = null;
     [HideInInspector] AiAgentDeathEffect aiAgentDeathEffect = null;

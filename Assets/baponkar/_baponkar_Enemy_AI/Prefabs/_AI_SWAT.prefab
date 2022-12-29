@@ -1,5 +1,65 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &186457406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186457407}
+  m_Layer: 12
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186457407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186457406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7504129534528602936}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1946617963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1946617964}
+  m_Layer: 12
+  m_Name: GroundCheck_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1946617964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946617963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7504129534528602936}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4264743612802606627
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +1018,7 @@ GameObject:
   - component: {fileID: 7653288225793145418}
   - component: {fileID: 7504129534528602897}
   - component: {fileID: 7504129534528602896}
+  - component: {fileID: 1232491592}
   m_Layer: 12
   m_Name: _AI_SWAT
   m_TagString: Enemy
@@ -981,6 +1042,8 @@ Transform:
   - {fileID: 7504129535450827449}
   - {fileID: 7504129534384620897}
   - {fileID: 3510014058715316293}
+  - {fileID: 186457407}
+  - {fileID: 1946617964}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1279,6 +1342,11 @@ MonoBehaviour:
   isHolstered: 0
   currentTarget: {fileID: 7504129534384620897}
   targetOffsetPosition: {x: 0, y: 1.08, z: 0}
+  equiped_weapon:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponDroped: 0
 --- !u!114 &1479496449463949023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,6 +1509,55 @@ MonoBehaviour:
   currentHealth: 0
   isDead: 0
   getShot: 0
+--- !u!114 &1232491592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504129534528602891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f7c975397305347b57963f05c7693c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  land: {fileID: 8300000, guid: bafce24e6815b43ceabac013c69e93a7, type: 3}
+  groundIndex: 0
+  grassStep:
+  - {fileID: 8300000, guid: 9449c1cd751634d6ba5a6fbc3fc2502d, type: 3}
+  - {fileID: 8300000, guid: 26096ebd9f68b47d3895c55e2eedce49, type: 3}
+  - {fileID: 8300000, guid: f324926541d3044669a1911d701fb029, type: 3}
+  - {fileID: 8300000, guid: d4f1aa40d7fb740179043f850be57a7c, type: 3}
+  - {fileID: 8300000, guid: d5c2faad503f849978f1031b189c0917, type: 3}
+  - {fileID: 8300000, guid: 136343f8ebc8f431da1755bc6227c85d, type: 3}
+  gravelStep:
+  - {fileID: 8300000, guid: 89650943064fc4c5d88270e54abf2173, type: 3}
+  - {fileID: 8300000, guid: b41774951f625421d92d576ead265971, type: 3}
+  - {fileID: 8300000, guid: 41009ad2799894aeea3a94336efd5f9b, type: 3}
+  - {fileID: 8300000, guid: 39cccf45d9e2547a886342821594af08, type: 3}
+  - {fileID: 8300000, guid: ec2d3903091fb498ca48e860e4b68df0, type: 3}
+  - {fileID: 8300000, guid: 1b4e6e3acc20049c89f44222d722aa02, type: 3}
+  metalStep:
+  - {fileID: 8300000, guid: 176da27ecf5374bf299c672f20025dd6, type: 3}
+  - {fileID: 8300000, guid: 4290dc2fdbaae4d6ca189be937471ff8, type: 3}
+  - {fileID: 8300000, guid: 0879500010cdb4d5695250255de279c4, type: 3}
+  - {fileID: 8300000, guid: 7400c4895000a4d1a9a78d929752346e, type: 3}
+  - {fileID: 8300000, guid: 8e96c2589221a4433a22960f3b3f8129, type: 3}
+  - {fileID: 8300000, guid: 5e478233460a04bc4aae20bb83519bd8, type: 3}
+  normalStep:
+  - {fileID: 8300000, guid: e749ca6855dde405aa8f5ff21aa27ec4, type: 3}
+  - {fileID: 8300000, guid: a1e9f750a495c4beba0a43e9f1e719e7, type: 3}
+  - {fileID: 8300000, guid: 237cd18e1619142249bb5f328aae90e1, type: 3}
+  - {fileID: 8300000, guid: 6547d258917564b70a8f0a478d2e567c, type: 3}
+  - {fileID: 8300000, guid: 55f455eaf5e4240a28428c98627461d4, type: 3}
+  - {fileID: 8300000, guid: dfc0430d8381044fba925a645a037fde, type: 3}
+  - {fileID: 8300000, guid: 963b31c25d43f4275ba11bcda964f228, type: 3}
+  groundCheck: {fileID: 186457407}
+  groundCheck_1: {fileID: 1946617964}
+  range: 1
+  layer:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &7504129534541259685
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,6 +6065,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol_1
       objectReference: {fileID: 0}
+    - target: {fileID: 8493233710670198338, guid: a2e710fa49b34a144a7ccc51bae4cd63,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2e710fa49b34a144a7ccc51bae4cd63, type: 3}
 --- !u!4 &2900932152137140187 stripped
@@ -5967,6 +6089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AWP_Sniper_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449361223061397109, guid: b30fda169a34bec4da198c23bf8796d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8453134696026323143, guid: b30fda169a34bec4da198c23bf8796d3,
         type: 3}

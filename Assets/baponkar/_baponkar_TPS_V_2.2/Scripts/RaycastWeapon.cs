@@ -81,6 +81,7 @@ public class RaycastWeapon : MonoBehaviour
         {
             return;
         }
+
         PlayBulletFireSound(audioSource,fireClip);
         ammoCount--;
         foreach (ParticleSystem muzzle in muzzleFlash)
