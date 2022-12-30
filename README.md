@@ -115,6 +115,6 @@ Need to assign "Everything" Layer to the AudioControl script which attached to t
 - Then change 35th line of **AiSensoryMemory.cs** script with 
  ```
  ```diff 
- @@ int targets = sensor.Filter(characters, "Player"); 
+ ! int targets = sensor.Filter(characters, "Player"); 
  ```
 
