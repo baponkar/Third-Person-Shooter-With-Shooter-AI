@@ -11,7 +11,15 @@
 
 ![ScreenShot1](Recordings/banner.png)
 # Third Person Shooter Player With Shooter AI(NPC)
-## Description : A Third Person Shooting Player with three weapon and a NPC shooter.This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.See  Demo [1.0.0](https://www.youtube.com/watch?v=D0Iv-NGmIcg), [1.1.0](https://www.youtube.com/watch?v=nowBHY_60OA), [1.1.1](https://www.youtube.com/watch?v=M79GJ6gpJvA&t=23s). 
+## Description : A Third Person Shooting Player with three weapon and a NPC shooter.This unity packages have some dependency. You need to download and imported inside of this unity project's Asset folder.Where only one have external asset a mixamo character and animations.You are requested to download and put all the dependency in your project otherwise it may not work properly.See  Demo 
+1. [1.0.0](https://www.youtube.com/watch?v=D0Iv-NGmIcg)
+
+2. [1.1.0](https://www.youtube.com/watch?v=nowBHY_60OA)
+
+3. [1.1.1](https://www.youtube.com/watch?v=M79GJ6gpJvA&t=23s)
+
+## Play [Demo Game](https://baponkar.github.io/Demo-Game-Play/)
+
 
 ## Contents :
 - [x] Third Person Shooter Player(Locomotion with Jump,shoot,reload,weapon change)
