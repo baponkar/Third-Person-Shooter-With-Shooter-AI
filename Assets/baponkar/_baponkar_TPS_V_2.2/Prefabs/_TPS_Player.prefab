@@ -714,7 +714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &451315893787883308
 RectTransform:
   m_ObjectHideFlags: 0
@@ -803,7 +803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451315893806739265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.04, z: -1}
+  m_LocalPosition: {x: 0, y: 1.896, z: -1.1399999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 451315894035342894}
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Offset: {x: 0.31, y: -0.31, z: -2}
+  m_Offset: {x: 0.1, y: 0.05, z: -2}
   m_ApplyAfter: 0
   m_PreserveComposition: 0
 --- !u!1 &451315893838185701
@@ -1947,7 +1947,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490370480538736398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.64, z: 0}
+  m_LocalPosition: {x: 0, y: 1.496, z: -0.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 91369587014402186}
@@ -2849,7 +2849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490370481609651958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.31000042, y: 1.73, z: -3}
+  m_LocalPosition: {x: 0.10000038, y: 1.9460001, z: -3.1399999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490370481467584948}
@@ -2919,12 +2919,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
+  m_ShowDebugText: 1
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 0
+  m_UpdateMethod: 1
+  m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 6
     m_Time: 0.02
@@ -3470,8 +3470,8 @@ MonoBehaviour:
   xAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 500
-    m_AccelTime: 50
+    m_MaxSpeed: 270
+    m_AccelTime: 2
     m_DecelTime: 0.02
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
@@ -3488,8 +3488,8 @@ MonoBehaviour:
   yAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 500
-    m_AccelTime: 50
+    m_MaxSpeed: 250
+    m_AccelTime: 2
     m_DecelTime: 0.01
     m_InputAxisName: Mouse Y
     m_InputAxisValue: 0
@@ -3505,7 +3505,7 @@ MonoBehaviour:
       m_LegacyVelocityFilterStrength: 0
   isAiming: 0
   anim: {fileID: 490370480591127475}
-  cameraSensitivity: 10
+  cameraSensitivity: 2
 --- !u!114 &490370481762278287
 MonoBehaviour:
   m_ObjectHideFlags: 0

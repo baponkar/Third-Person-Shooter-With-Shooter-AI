@@ -17,9 +17,10 @@ public class Health : MonoBehaviour
     [HideInInspector] AiAgent agent;
     public bool getShot = false;
 
-
+    
     void Start()
     {
+        
         currentHealth = maxHealth;
 
         var rigidbodies = GetComponentsInChildren<Rigidbody>();
@@ -62,7 +63,7 @@ public class Health : MonoBehaviour
     IEnumerator GetShot()
     {
         getShot = true;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1f);
         getShot = false;
     }
 

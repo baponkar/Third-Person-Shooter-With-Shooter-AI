@@ -84,7 +84,7 @@ public class AudioControl : MonoBehaviour
     {
         if(!gruntEffect.isPlaying)
         {
-            gruntEffect.Play();
+            gruntEffect.PlayOneShot(gruntEffect.clip);
         }
     }
 }

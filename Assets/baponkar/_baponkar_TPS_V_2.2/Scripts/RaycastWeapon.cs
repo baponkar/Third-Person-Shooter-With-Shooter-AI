@@ -54,6 +54,7 @@ public class RaycastWeapon : MonoBehaviour
 
     public ParticleSystem [] hitEffect;
     public ParticleSystem [] bloodEffect;
+    public ParticleSystem[] bodyPartEffect;
 
     public TrailRenderer tracerEffect;
 
@@ -177,6 +178,12 @@ public class RaycastWeapon : MonoBehaviour
                     }
                 else
                 {
+                    foreach(var hit in bodyPartEffect)
+                    {
+                        hit.transform.position = hitInfo.point;
+                        hit.transform.forward = hitInfo.normal;
+                        hit.Emit(1);
+                    }
                     foreach (ParticleSystem blood in bloodEffect)
                     {
                         blood.transform.position = hitInfo.point;
