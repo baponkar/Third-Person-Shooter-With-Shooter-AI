@@ -15,6 +15,9 @@ public class AudioControl : MonoBehaviour
     public float range = 1f;
     public LayerMask layer;
 
+    public AudioSource gruntEffect;
+    public Health health;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -23,6 +26,11 @@ public class AudioControl : MonoBehaviour
     private void Update()
     {
         groundIndex = GetGroundIndex();
+        if(health.getShot && !health.isDead)
+        {
+            PlayGrunt();
+        }
+        
     }
 
 
@@ -70,5 +78,13 @@ public class AudioControl : MonoBehaviour
     {
         int randomIndex = (int)Random.Range(0, clips.Length);
         audioSource.PlayOneShot(clips[randomIndex]);
+    }
+
+    void PlayGrunt()
+    {
+        if(!gruntEffect.isPlaying)
+        {
+            gruntEffect.Play();
+        }
     }
 }

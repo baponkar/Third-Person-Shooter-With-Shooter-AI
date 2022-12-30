@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     public bool isDead = false;
     [HideInInspector] PlayerDeathEffect playerDeathEffect = null;
     [HideInInspector] AiAgentDeathEffect aiAgentDeathEffect = null;
-    //[HideInInspector] AiAgent agent;
+    [HideInInspector] AiAgent agent;
     public bool getShot = false;
 
 
@@ -48,16 +48,16 @@ public class Health : MonoBehaviour
         //agent = GetComponent<AiAgent>();
     }
 
-    // void Update()
-    // {
-    //     if(agent)
-    //     {
-    //         if(currentHealth < maxHealth)
-    //         {
-    //             agent.stateMachine.ChangeState(AiStateId.AttackTarget);
-    //         }
-    //     }
-    // }
+     void Update()
+     {
+         if(agent)
+        {
+             if(currentHealth < maxHealth)
+             {
+                 agent.stateMachine.ChangeState(AiStateId.AttackTarget);
+             }
+         }
+     }
 
     IEnumerator GetShot()
     {

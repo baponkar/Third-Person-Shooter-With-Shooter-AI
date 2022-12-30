@@ -16,7 +16,12 @@ namespace ThirdPersonShooter.Ai
         public bool HasTarget { get { return bestMemory != null; }}
         AiMemory bestMemory;
         public GameObject Target { get { return bestMemory.gameObject; } }
-        public Vector3 TargetPosition { get { return bestMemory.gameObject.transform.position; } }
+        public Vector3 TargetPosition { 
+            get
+            {
+                return bestMemory.gameObject.transform.position;
+            }
+        }
         public bool TargetInSight { get { return bestMemory.age < 0.5f; } }
         public float TargetDistance { get { return bestMemory.distance; } }
         AiSensoryMemory memory = new AiSensoryMemory(10);

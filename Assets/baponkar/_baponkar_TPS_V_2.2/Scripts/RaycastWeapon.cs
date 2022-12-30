@@ -164,7 +164,6 @@ public class RaycastWeapon : MonoBehaviour
         ray.direction = direction;
         if (Physics.Raycast(ray, out hitInfo, distance))
         {
-            Debug.Log(hitInfo.transform.name);
             if(hitInfo.transform != this.transform)
             {
                 PlayBulletFireSound(hitInfo.transform.GetComponent<AudioSource>(), hitClip);

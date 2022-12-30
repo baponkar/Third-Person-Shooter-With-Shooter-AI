@@ -8,9 +8,6 @@ namespace ThirdPersonShooter.Ai
 {
     public class AiAttackTargetState : AiState
     {
-        float timer;
-        float waitTime = 2f;
-
         public  AiStateId GetStateId()
         {
             return AiStateId.AttackTarget;

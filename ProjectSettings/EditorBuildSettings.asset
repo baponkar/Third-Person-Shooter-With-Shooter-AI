@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/baponkar/_DemoScene/DemoScene.unity
+    guid: 7fec0caa32ea3104bb78d9bc4254e16e
+  m_configObjects: {}

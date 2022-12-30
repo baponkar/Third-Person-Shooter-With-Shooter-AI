@@ -37,7 +37,7 @@ namespace ThirdPersonShooter.Ai
                 agent.navMeshAgent.SetDestination(agent.targetingSystem.TargetPosition);
             }
 
-            if(timer <= 0)
+            if(timer <= 0 && agent.targetingSystem.HasTarget)
             {
                 Vector3 direction = agent.targetingSystem.TargetPosition - agent.transform.position;
                 direction.y = 0;
@@ -52,7 +52,7 @@ namespace ThirdPersonShooter.Ai
                 timer = agent.config.maxTime;
             }
 
-            if(agent.targetingSystem.TargetDistance <= agent.config.attackRange)
+            if(agent.targetingSystem.HasTarget && agent.targetingSystem.TargetDistance <= agent.config.attackRange)
             {
                 agent.stateMachine.ChangeState(AiStateId.AttackTarget);
             }
