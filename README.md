@@ -104,7 +104,10 @@ Need to assign "Minimap" Layer to the minimap prefab.
 Need to assign "UI" Layer to the all UI elements.
 Need to assign "Everything" Layer to the AudioControl script which attached to the player prefab child object.
 
-## Now if you want NPC will attack only to the Player not to each other
+```diff
++ ## Now if you want NPC will attack only to the Player not to each other
+```
+
 ```diff
 - then you need to create **Player** layer and select  to the *swat@T-Pose* which is a child object of **_TPS_Player** Prefab.
 - After that change layer of AiVisonSensor which is attached to the _AI_SWAT Prefab with **Player** and **Pickup**.
