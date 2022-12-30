@@ -1019,6 +1019,7 @@ GameObject:
   - component: {fileID: 7504129534528602897}
   - component: {fileID: 7504129534528602896}
   - component: {fileID: 1232491592}
+  - component: {fileID: 5780154497687554513}
   m_Layer: 18
   m_Name: _AI_SWAT
   m_TagString: Enemy
@@ -1561,6 +1562,20 @@ MonoBehaviour:
     m_Bits: 4294967295
   gruntEffect: {fileID: 6915193290424515665}
   health: {fileID: 7504129534528602896}
+--- !u!114 &5780154497687554513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504129534528602891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9cfa124f973c64f92bc229b825f56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alert: 0
+  range: 5
 --- !u!1 &7504129534541259685
 GameObject:
   m_ObjectHideFlags: 0
