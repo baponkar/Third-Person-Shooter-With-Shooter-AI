@@ -37,6 +37,7 @@ namespace ThirdPersonShooter.Ai
                 agent.transform.GetComponent<AiAgentLocomotion>().enabled = false;
                 //agent.transform.GetComponent<AiWeapons>().enabled = false;
                 agent.transform.GetComponent<AiVisonSensor>().enabled = false;
+                agent.transform.GetComponent<SphereCollider>().enabled = false;
             }
 
            

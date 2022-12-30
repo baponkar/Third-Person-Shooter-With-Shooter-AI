@@ -51,6 +51,11 @@ namespace ThirdPersonShooter.Ai
                 }
                 timer = agent.config.maxTime;
             }
+            else if(timer <= 0 && !agent.targetingSystem.HasTarget)
+            {
+                agent.stateMachine.ChangeState(AiStateId.FindTarget);
+                timer = agent.config.maxTime;
+            }
 
             if(agent.targetingSystem.HasTarget && agent.targetingSystem.TargetDistance <= agent.config.attackRange)
             {
