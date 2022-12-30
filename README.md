@@ -18,6 +18,8 @@
 
 3. [1.1.1](https://www.youtube.com/watch?v=M79GJ6gpJvA&t=23s)
 
+4. [1.2.2](https://youtu.be/dSjZmPRB1yg)
+
 ## Play [Demo Game](https://baponkar.github.io/Demo-Game-Play/)
 
 
