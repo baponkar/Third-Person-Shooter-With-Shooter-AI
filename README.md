@@ -65,6 +65,10 @@ See Using project [Doc] Video in YouTube.
 1. [Mixamo](https://www/mixamo.com) 
 
 ---
+* Sounds and Effects
+1. [Pixabay](https://pixabay.com/sound-effects/)
+
+---
 * YT Video Tutorials
 1. [Kiwi Coder](https://www.youtube.com/c/TheKiwiCoder)
 2. [Brackeys](https://www.youtube.com/results?search_query=brackeys)
