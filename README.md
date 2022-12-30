@@ -104,8 +104,8 @@ Need to assign "Minimap" Layer to the minimap prefab.
 Need to assign "UI" Layer to the all UI elements.
 Need to assign "Everything" Layer to the AudioControl script which attached to the player prefab child object.
 
-## ```diff
-+ Now if you want NPC will attack only to the Player not to each other
+```diff
+## + Now if you want NPC will attack only to the Player not to each other
 ```
 
 ```diff
