@@ -33,7 +33,7 @@ public class AiSensoryMemory
 
     public void UpdateSenses(AiVisonSensor sensor)
     {
-        int targets = sensor.Filter(characters, "Character");
+        int targets = sensor.Filter(characters, "Player");
         for(int i =0; i< targets; ++i)
         {
             GameObject target = characters[i];
