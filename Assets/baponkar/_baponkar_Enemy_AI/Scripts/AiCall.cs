@@ -7,9 +7,6 @@ namespace ThirdPersonShooter.Ai
 {
     public class AiCall : MonoBehaviour
     {
-        Health health;
-
-        AiTargetingSystem targetingSystem;
         AiAgent agent;
 
         public bool alert;
@@ -17,14 +14,14 @@ namespace ThirdPersonShooter.Ai
 
         void Start()
         {
-            health = GetComponent<Health>();
             agent = GetComponent<AiAgent>();
         }
 
         
         void Update()
         {
-            if (targetingSystem.HasTarget)
+            //if agent is not dead and has target then alert get true
+            if (agent.targetingSystem.HasTarget && !agent.health.isDead)
             {
                 alert = true;
             }
