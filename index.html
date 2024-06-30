@@ -90,15 +90,14 @@
           margin-left: 2%;
           margin-right: 2%;
           padding: 1%;
-          border: 2px solid white;
-          border-radius: 2px 4px 8px 12px;
-          box-shadow: 0 0 8px;
           justify-content: center;
           align-items: center;
           text-align: start;
       }
       
       iframe{
+          max-width: 80%;
+          height: auto;
           padding-top: 2%;
           margin-left: 2%;
           margin-right: 2%;
@@ -107,13 +106,14 @@
       li{
           color: white;
       }
+
       /* Responsive design */
       @media screen and (max-width: 600px) {
           .badge-container{
             flex-direction: column;
           }
           .badge{
-              max-height: 50px;
+              max-height: 20px;
               width: auto;
           }
       }
@@ -123,7 +123,7 @@
             flex-direction: column;
           }
           .badge{
-              max-height: 50px;
+              max-height: 20px;
               width: auto;
           }
       }
@@ -161,14 +161,27 @@
     
     <h2>Watch Youtube demo videos</h2>
     <div class="youtube-video-container">
-        <h2>Version - 1.2.2</h2>
-        <iframe src="https://www.youtube.com/embed/dSjZmPRB1yg?si=HZ1h0luTl_JySJi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h2>Version - 1.1.1</h2>
-        <iframe src="https://www.youtube.com/embed/M79GJ6gpJvA?si=byIYFmnpC-sPqMi6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h2>Version - 1.1.0</h2>
-        <iframe src="https://www.youtube.com/embed/nowBHY_60OA?si=9a-5Qxjgqs19j0Sf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h2>Version - 1.0.0</h2>
-        <iframe src="https://www.youtube.com/embed/D0Iv-NGmIcg?si=4xayOTEK-cv5bBnC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <ol>
+            <li>
+            <h2>Version - 1.2.2</h2>
+            <iframe src="https://www.youtube.com/embed/dSjZmPRB1yg?si=HZ1h0luTl_JySJi9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </li>
+
+            <li>
+            <h2>Version - 1.1.1</h2>
+            <iframe src="https://www.youtube.com/embed/M79GJ6gpJvA?si=byIYFmnpC-sPqMi6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </li>
+
+            <li>
+            <h2>Version - 1.1.0</h2>
+            <iframe src="https://www.youtube.com/embed/nowBHY_60OA?si=9a-5Qxjgqs19j0Sf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </li>
+
+            <li>
+            <h2>Version - 1.0.0</h2>
+            <iframe src="https://www.youtube.com/embed/D0Iv-NGmIcg?si=4xayOTEK-cv5bBnC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </li>
+        </ol>
     </div>    
 
     
@@ -177,17 +190,17 @@
     
     <h3 id="contents-">This package has following characteristics</h3>
     <ul>
-    <li>[x] Third Person Shooter Player(Locomotion with Jump,shoot,reload,weapon change)</li>
-    <li>[x] First Person Shooter Player</li>
-    <li>[x] Cross Platform Control</li>
-    <li>[ ] Multiple AI</li>
-    <li>[ ] AI take cover and Hide ability!</li>
-    <li>[x] Mini Map</li>
-    <li>[x] Shooter Navmesh AI with different state(Patrol,Find Weapon,Find Target,Death,Attack,ChaseTarget)</li>
-    <li>[x] Three Raycast Weapon(Pistol,Rifle,Sniper)</li>
-    <li>[x] Four Demo Scene</li>
-    <li>[x] Weapon Pickup for player and AI</li>
-    <li>[x] Demo Scene</li>
+    <li>&check; Third Person Shooter Player(Locomotion with Jump,shoot,reload,weapon change)</li>
+    <li>&check; First Person Shooter Player</li>
+    <li>&check; Cross Platform Control</li>
+    <li>&#10007; Multiple AI</li>
+    <li>&#10007; AI take cover and Hide ability!</li>
+    <li>&check; Mini Map</li>
+    <li>&check; Shooter Navmesh AI with different state(Patrol,Find Weapon,Find Target,Death,Attack,ChaseTarget)</li>
+    <li>&check; Three Raycast Weapon(Pistol,Rifle,Sniper)</li>
+    <li>&check; Four Demo Scene</li>
+    <li>&check; Weapon Pickup for player and AI</li>
+    <li>&check; Demo Scene</li>
     </ul>
 
 
