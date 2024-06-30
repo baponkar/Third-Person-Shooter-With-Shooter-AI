@@ -252,22 +252,20 @@
     <h2>You need to create following Tags : </h2>
     <img src="Recordings/tags.png" alt="Tags">
 
-    <p>
-        Need to assign &quot;Character&quot; Layer to the layers of Player(swat@T-Pose) and _AI_SWAT prefabs.
-        Need to assign &quot;Pickup&quot; Layer to the all Pickups prefabs.
-        Need to assign &quot;Minimap&quot; Layer to the minimap prefab.
-        Need to assign &quot;UI&quot; Layer to the all UI elements.
-        Need to assign &quot;Everything&quot; Layer to the AudioControl script which attached to the player prefab child object.
-    </p>
+    <ol>
+        <li>Need to assign &quot;Character&quot; Layer to the layers of Player(swat@T-Pose) and _AI_SWAT prefabs.</li>
+        <li>Need to assign &quot;Pickup&quot; Layer to the all Pickups prefabs.</li>
+        <li>Need to assign &quot;Minimap&quot; Layer to the minimap prefab.</li>
+        <li>Need to assign &quot;UI&quot; Layer to the all UI elements.</li>
+        <li>Need to assign &quot;Everything&quot; Layer to the AudioControl script which attached to the player prefab child object.</li>
+    </ol>
 
-    <pre><code class="lang-diff">+ Now <span class="hljs-keyword">if</span> you want NPC will attack only <span class="hljs-built_in">to</span> <span class="hljs-keyword">the</span> Player <span class="hljs-keyword">not</span> <span class="hljs-built_in">to</span> <span class="hljs-keyword">each</span> other
-    </code></pre>
-    <pre><code class="lang-diff">- then you need to <span class="hljs-keyword">create</span> **Player** layer <span class="hljs-keyword">and</span> <span class="hljs-keyword">select</span>  <span class="hljs-keyword">to</span> the *swat@T-Pose* which <span class="hljs-keyword">is</span> a <span class="hljs-keyword">child</span> <span class="hljs-keyword">object</span> <span class="hljs-keyword">of</span> **_TPS_Player** Prefab.
-    - <span class="hljs-keyword">After</span> that <span class="hljs-keyword">change</span> layer <span class="hljs-keyword">of</span> AiVisonSensor which <span class="hljs-keyword">is</span> attached <span class="hljs-keyword">to</span> the _AI_SWAT Prefab <span class="hljs-keyword">with</span> **Player** <span class="hljs-keyword">and</span> **Pickup**.
-    - <span class="hljs-keyword">Then</span> <span class="hljs-keyword">change</span> <span class="hljs-number">35</span>th line <span class="hljs-keyword">of</span> **AiSensoryMemory.cs** script <span class="hljs-keyword">with</span>
-    </code></pre>
-    <pre><code class="lang-diff"> ! <span class="hljs-built_in">int</span> targets = sensor.<span class="hljs-built_in">Filter</span>(characters, <span class="hljs-string">"Player"</span>);
-    </code></pre>
+    <p>
+    Now if you want NPC will attack only the Player not to each other then you need to  create **Player** layer  and     select      to    the *swat@T-Pose* which  is    a  child     object     of    **_TPS_Player** Prefab.
+    -  After that change    layer  of    AiVisonSensor which  is    attached  to    the _AI_SWAT Prefab  with    **Player**  and    **Pickup**.
+    -  Then change 35th line  of **AiSensoryMemory.cs** script  with   
+    int targets = sensor.Filter   (characters, "Player");
+    </p>
     
     <h2 id="info">Info</h2>
     <ol>
