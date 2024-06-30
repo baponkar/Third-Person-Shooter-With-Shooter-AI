@@ -102,14 +102,25 @@
       iframe{
           max-width: 80%;
           height: auto;
-          padding-top: 2%;
-          margin-left: 2%;
-          margin-right: 2%;
+          padding: 2%;
+      }
+
+      .sponsor-button-container{
+        border: 0; 
+        border-radius: 6px;
+        z-index: 1000;
+        max-width: 100px;
+        height: auto;
+        justify-content: center;
+        align-items: end;
+        margin: 2%;
       }
       
       li{
           color: white;
       }
+
+
 
       /* Responsive design */
       @media screen and (max-width: 600px) {
@@ -151,6 +162,11 @@
         <img class="badge"  src="https://img.shields.io/badge/Copyright-baponkar-orange" alt="Copyright Badge">
     </div>
     
+
+    <div class="sponsor-button-container">
+        <iframe src="https://github.com/sponsors/baponkar/button" title="Sponsor baponkar" height="50" width="100"></iframe>
+    </div>
+
     <h2>Description :</h2>
     <p>
          A Third Person Shooting Player with three weapon and a NPC shooter.
